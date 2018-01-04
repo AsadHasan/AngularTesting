@@ -4,6 +4,7 @@ export var config: Config = {
     capabilities: {
         browserName: "chrome"
     },
+    SELENIUM_PROMISE_MANAGER: false,
     framework: "custom",
     frameworkPath: require.resolve("protractor-cucumber-framework"),
     specs: ["./features/*.feature"],
