@@ -1,9 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.config = {
-    capabilities: {
-        browserName: "chrome"
-    },
+    multiCapabilities: [{ "browserName": "chrome" }, { "browserName": "firefox" }],
     SELENIUM_PROMISE_MANAGER: false,
     framework: "custom",
     frameworkPath: require.resolve("protractor-cucumber-framework"),
