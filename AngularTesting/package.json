@@ -22,5 +22,6 @@
     "@types/chai": "^4.0.10",
     "@types/cucumber": "^2.1.0",
     "@types/selenium-webdriver": "^3.0.8"
-  }
+  },
+  "scripts": {"test": "protractor conf.js"}
 }
