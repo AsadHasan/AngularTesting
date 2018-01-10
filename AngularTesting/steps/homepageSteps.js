@@ -43,10 +43,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var cucumber_tsflow_1 = require("cucumber-tsflow");
 var protractor_1 = require("protractor");
-var homepageChecks_1 = require("../pagechecks/homepageChecks");
+var homepageChecker = require("../pagechecks/homepageChecks");
 var HomepageSteps = /** @class */ (function () {
     function HomepageSteps() {
-        this.homepageChecker = new homepageChecks_1.HomePageChecks();
     }
     HomepageSteps.prototype.goToHomepage = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -61,7 +60,7 @@ var HomepageSteps = /** @class */ (function () {
         });
     };
     HomepageSteps.prototype.getStartedButtonIsPresent = function () {
-        this.homepageChecker.checkStartButton();
+        homepageChecker.checkStartButton();
     };
     __decorate([
         cucumber_tsflow_1.given(/^I am on the homepage$/)

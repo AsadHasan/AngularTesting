@@ -1,5 +1,8 @@
-﻿import {$} from "protractor";
+﻿import { $, promise } from "protractor";
 
-export class Homepage {
-    public readonly startButton = $(".button.hero-cta");
+export function startButtonDisplayed(): promise.Promise<boolean> {
+    return $(".button.hero-cta").isDisplayed();
 }
+
+
+

@@ -1,11 +1,9 @@
 ﻿import { binding, given, when, then } from "cucumber-tsflow";
 import { browser } from "protractor";
-import { HomePageChecks } from "../pagechecks/homepageChecks";
+import * as homepageChecker from "../pagechecks/homepageChecks";
 
 @binding()
 class HomepageSteps{
-
-    homepageChecker: HomePageChecks = new HomePageChecks();
 
     @given(/^I am on the homepage$/)
     async goToHomepage() {
@@ -14,6 +12,6 @@ class HomepageSteps{
 
     @then(/^a get started button is present$/)
     getStartedButtonIsPresent() {
-        this.homepageChecker.checkStartButton();
+        homepageChecker.checkStartButton();
     }
 }

@@ -1,11 +1,6 @@
-﻿import { Homepage } from "../pageobjects/homepage";
+﻿import * as homepage from '../pageobjects/homepage';
 import { expect } from "chai";
 
-export class HomePageChecks {
-    homepage: Homepage = new Homepage();
-
-    public checkStartButton() {
-        var buttonText = this.homepage.startButton.getText();
-        expect(buttonText).to.be.not.empty;
+export function checkStartButton() {
+        expect(homepage.startButtonDisplayed).to.be.true;
     }
-}
