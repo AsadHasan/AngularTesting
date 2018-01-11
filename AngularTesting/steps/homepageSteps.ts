@@ -1,17 +1,13 @@
-﻿import { binding, given, when, then } from "cucumber-tsflow";
+﻿import { defineSupportCode } from "cucumber";
 import { browser } from "protractor";
 import * as homepageChecker from "../pagechecks/homepageChecks";
 
-@binding()
-class HomepageSteps{
-
-    @given(/^I am on the homepage$/)
-    async goToHomepage() {
+defineSupportCode(({ Given: given, Then: then}) => {
+    given("I am on the homepage", async () => {
         await browser.get("https://angular.io/");
-    }
+    });
 
-    @then(/^a get started button is present$/)
-    getStartedButtonIsPresent() {
-        homepageChecker.checkStartButton();
-    }
-}
+    then("a get started button is present", () => {
+         homepageChecker.checkStartButton();
+    });
+} );

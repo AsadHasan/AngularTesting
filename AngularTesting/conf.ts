@@ -1,7 +1,7 @@
 ﻿import { Config } from "protractor";
 
 export var config: Config = {
-    multiCapabilities: [{ "browserName": "chrome" }, { "browserName": "firefox" }],
+    multiCapabilities: [{ "browserName": "chrome" }, { "browserName": "firefox" }, { "browserName": "internet explorer"}],
     SELENIUM_PROMISE_MANAGER: false,
     framework: "custom",
     frameworkPath: require.resolve("protractor-cucumber-framework"),
