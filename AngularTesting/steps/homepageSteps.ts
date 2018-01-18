@@ -8,6 +8,6 @@ defineSupportCode(({Given: given, Then: then}) => {
     });
 
     then("a get started button is present", () => {
-         homepageChecker.checkStartButton();
+        homepageChecker.checkStartButton();
     });
 } );

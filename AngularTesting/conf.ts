@@ -1,7 +1,30 @@
-﻿import { Config } from "protractor";
+﻿import { Config,browser } from "protractor";
 
 export var config: Config = {
-    multiCapabilities: [{ "browserName": "chrome" }, { "browserName": "firefox" }, { "browserName": "internet explorer" }],
+    multiCapabilities: [{
+        "browserName": "chrome",
+        "loggingPrefs": {
+      'driver': 'WARNING',
+        'server': 'WARNING',
+        'browser': 'INFO'
+        }
+    },
+        {
+            "browserName": "firefox",
+            "loggingPrefs": {
+                'driver': 'WARNING',
+                'server': 'WARNING',
+                'browser': 'INFO'
+            }
+        },
+        {
+            "browserName": "internet explorer",
+            "loggingPrefs": {
+                'driver': 'WARNING',
+                'server': 'WARNING',
+                'browser': 'INFO'
+            }
+        }],
     plugins: [{
         package: "protractor-multiple-cucumber-html-reporter-plugin",
         options: {
