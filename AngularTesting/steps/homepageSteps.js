@@ -12,11 +12,11 @@ const cucumber_1 = require("cucumber");
 const protractor_1 = require("protractor");
 const homepageChecker = require("../pagechecks/homepageChecks");
 cucumber_1.defineSupportCode(({ Given: given, Then: then }) => {
-    given("I am on the homepage", () => __awaiter(this, void 0, void 0, function* () {
+    given(/^I am on the homepage$/, () => __awaiter(this, void 0, void 0, function* () {
         yield protractor_1.browser.get("https://angular.io/");
     }));
-    then("a get started button is present", () => {
-        homepageChecker.checkStartButton();
-    });
+    then(/^a get started button is present$/, () => __awaiter(this, void 0, void 0, function* () {
+        yield homepageChecker.checkStartButton();
+    }));
 });
 //# sourceMappingURL=homepageSteps.js.map

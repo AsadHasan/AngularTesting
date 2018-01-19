@@ -2,5 +2,5 @@
 import { expect } from "chai";
 
 export async function checkStartButton() {
-    await expect(homepage.startButtonDisplayed).to.be.true;
-    }
+    await expect(await homepage.startButtonDisplayed()).to.be.true;
+}

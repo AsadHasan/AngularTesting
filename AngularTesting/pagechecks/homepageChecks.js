@@ -12,7 +12,7 @@ const homepage = require("../pageobjects/homepage");
 const chai_1 = require("chai");
 function checkStartButton() {
     return __awaiter(this, void 0, void 0, function* () {
-        yield chai_1.expect(homepage.startButtonDisplayed).to.be.true;
+        yield chai_1.expect(yield homepage.startButtonDisplayed()).to.be.true;
     });
 }
 exports.checkStartButton = checkStartButton;
