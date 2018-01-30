@@ -1,6 +1,14 @@
 ﻿import { expect } from "chai";
 import * as searchResultsPanel from "../pageobjects/searchResultsPanel";
 
-export async function checkOtherSearchResults(result: string) {
-    expect(searchResultsPanel.getOtherSearchResults()).to.eventually.
+export function checkOtherSearchResults(result: string) {
+    searchResultsPanel.getOtherSearchResults().then(elements => {
+        for (var element of elements) {
+            element.getText().then(text => {
+                if (text === result) {
+                    expect(element.getText()).to.eventually.be.equal(result);
+                }
+            })
+        }
+    })
 }
