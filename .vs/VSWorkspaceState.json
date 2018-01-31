@@ -3,12 +3,9 @@
     "",
     "\\AngularTesting",
     "\\AngularTesting\\features",
-    "\\AngularTesting\\node_modules",
-    "\\AngularTesting\\node_modules\\protractor",
-    "\\AngularTesting\\node_modules\\protractor\\node_modules",
     "\\AngularTesting\\pagechecks",
+    "\\AngularTesting\\pageobjects",
     "\\AngularTesting\\steps"
   ],
-  "SelectedNode": "\\AngularTesting\\node_modules\\protractor\\node_modules",
   "PreviewInSolutionExplorer": false
 }

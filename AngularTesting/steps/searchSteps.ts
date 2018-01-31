@@ -4,6 +4,6 @@ import { defineSupportCode } from "cucumber";
 
 defineSupportCode(({ When: when, Then: then }) => {
     when(/^I search for (.*)$/, async (term: string) => { await homepage.searchFor(term); });
-    then(/^I should see (.*)$/, async (result: string) => { await searchCheck.checkOtherSearchResults(result); });
+    then(/^I should see (.*)$/, (result: string) => { searchCheck.checkOtherSearchResults(result); });
 });
 

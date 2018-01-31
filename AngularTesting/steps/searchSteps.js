@@ -13,6 +13,6 @@ const searchCheck = require("../pagechecks/searchREsultsPanelChecks");
 const cucumber_1 = require("cucumber");
 cucumber_1.defineSupportCode(({ When: when, Then: then }) => {
     when(/^I search for (.*)$/, (term) => __awaiter(this, void 0, void 0, function* () { yield homepage.searchFor(term); }));
-    then(/^I should see (.*)$/, (result) => __awaiter(this, void 0, void 0, function* () { yield searchCheck.checkOtherSearchResults(result); }));
+    then(/^I should see (.*)$/, (result) => { searchCheck.checkOtherSearchResults(result); });
 });
 //# sourceMappingURL=searchSteps.js.map

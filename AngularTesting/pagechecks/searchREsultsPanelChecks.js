@@ -4,13 +4,13 @@ const chai_1 = require("chai");
 const searchResultsPanel = require("../pageobjects/searchResultsPanel");
 function checkOtherSearchResults(result) {
     searchResultsPanel.getOtherSearchResults().then(elements => {
+        var results;
         for (var element of elements) {
             element.getText().then(text => {
-                if (text === result) {
-                    chai_1.expect(element.getText()).to.eventually.be.equal(result);
-                }
+                results.push(text);
             });
         }
+        chai_1.expect(results).include(result);
     });
 }
 exports.checkOtherSearchResults = checkOtherSearchResults;
