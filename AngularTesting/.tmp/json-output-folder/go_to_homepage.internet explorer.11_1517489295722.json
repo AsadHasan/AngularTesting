@@ -1,0 +1,59 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Go to homepage",
+    "line": 1,
+    "id": "go-to-homepage",
+    "tags": [],
+    "uri": "features\\homepage.feature",
+    "elements": [
+      {
+        "id": "go-to-homepage;check-that-homepage-has-start-button",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Check that homepage has start button",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "steps\\homepageSteps.ts:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5012,
+              "error_message": "Error: function timed out after 5000 milliseconds\n    at Timeout._onTimeout (C:\\Users\\d-asha1\\source\\repos\\AngularTesting\\AngularTesting\\node_modules\\cucumber\\src\\user_code_runner.js:61:18)\n    at ontimeout (timers.js:475:11)\n    at tryOnTimeout (timers.js:310:5)\n    at Timer.listOnTimeout (timers.js:270:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "a get started button is present",
+            "match": {
+              "location": "steps\\homepageSteps.ts:10"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "internet explorer",
+        "version": "11"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

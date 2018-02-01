@@ -8,8 +8,16 @@ exports.config = {
     specs: ["./features/*.feature"],
     cucumberOpts: {
         compiler: "ts:ts-node/register",
-        require: ["./steps/*.ts"]
+        require: ["./steps/*.ts"],
+        format: "json:.tmp/results.json"
     },
+    plugins: [{
+            package: "protractor-multiple-cucumber-html-reporter-plugin",
+            options: {
+                automaticallyGenerateReport: true,
+                removeExistingJsonReportFile: true
+            }
+        }],
     seleniumAddress: "http://localhost:4444/wd/hub"
 };
 //# sourceMappingURL=conf.js.map
