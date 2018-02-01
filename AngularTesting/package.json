@@ -2,7 +2,6 @@
   "name": "angular-testing",
   "version": "0.0.0",
   "description": "AngularTesting",
-  "main": "app.js",
   "author": {
     "name": "d-asha1"
   },

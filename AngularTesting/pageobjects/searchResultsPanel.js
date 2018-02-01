@@ -11,7 +11,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 function getOtherSearchResults() {
     return __awaiter(this, void 0, void 0, function* () {
-        return protractor_1.element.all(protractor_1.by.cssContainingText(".search-results>.search-area", "other"));
+        var results = yield protractor_1.element.all(protractor_1.by.cssContainingText(".search-results>.search-area", "other"));
+        return results;
     });
 }
 exports.getOtherSearchResults = getOtherSearchResults;

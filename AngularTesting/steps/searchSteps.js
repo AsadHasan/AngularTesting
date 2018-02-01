@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const homepage = require("../pageobjects/homepage");
-const searchCheck = require("../pagechecks/searchREsultsPanelChecks");
+const searchCheck = require("../pagechecks/searchResultsPanelChecks");
 const cucumber_1 = require("cucumber");
 cucumber_1.defineSupportCode(({ When: when, Then: then }) => {
     when(/^I search for (.*)$/, (term) => __awaiter(this, void 0, void 0, function* () { yield homepage.searchFor(term); }));

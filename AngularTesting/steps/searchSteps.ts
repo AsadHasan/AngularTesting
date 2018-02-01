@@ -1,5 +1,5 @@
 ﻿import * as homepage from "../pageobjects/homepage";
-import * as searchCheck from "../pagechecks/searchREsultsPanelChecks";
+import * as searchCheck from "../pagechecks/searchResultsPanelChecks";
 import { defineSupportCode } from "cucumber";
 
 defineSupportCode(({ When: when, Then: then }) => {
