@@ -14,4 +14,4 @@ function checkOtherSearchResults(result) {
     });
 }
 exports.checkOtherSearchResults = checkOtherSearchResults;
-//# sourceMappingURL=searchResultsPanelChecks.js.map
+//# sourceMappingURL=searchREsultsPanelChecks.js.map

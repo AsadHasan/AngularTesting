@@ -1,44 +1,57 @@
 [
   {
     "keyword": "Feature",
-    "name": "Go to homepage",
+    "name": "Search for angular",
     "line": 1,
-    "id": "go-to-homepage",
+    "id": "search-for-angular",
     "tags": [],
-    "uri": "features\\homepage.feature",
+    "uri": "features\\search.feature",
     "elements": [
       {
-        "id": "go-to-homepage;check-that-homepage-has-start-button",
+        "id": "search-for-angular;",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Check that homepage has start button",
+        "line": 12,
+        "name": "",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "I am on the homepage",
             "match": {
               "location": "steps\\homepageSteps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 4299
+              "duration": 1645
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I search for angular",
+            "match": {
+              "location": "steps\\searchSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2143
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "a get started button is present",
+            "line": 8,
+            "name": "I should see What is Angular?",
             "match": {
-              "location": "steps\\homepageSteps.ts:10"
+              "location": "steps\\searchSteps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 73
+              "duration": 1
             }
           }
         ]
@@ -46,8 +59,8 @@
     ],
     "metadata": {
       "browser": {
-        "name": "chrome",
-        "version": "63.0.3239.132"
+        "name": "internet explorer",
+        "version": "11"
       },
       "device": "",
       "platform": {

@@ -24,9 +24,8 @@
               "location": "steps\\homepageSteps.ts:6"
             },
             "result": {
-              "status": "failed",
-              "duration": 5002,
-              "error_message": "Error: function timed out after 5000 milliseconds\n    at Timeout._onTimeout (C:\\Users\\d-asha1\\source\\repos\\AngularTesting\\AngularTesting\\node_modules\\cucumber\\src\\user_code_runner.js:61:18)\n    at ontimeout (timers.js:475:11)\n    at tryOnTimeout (timers.js:310:5)\n    at Timer.listOnTimeout (timers.js:270:5)"
+              "status": "passed",
+              "duration": 1110
             }
           },
           {
@@ -38,7 +37,8 @@
               "location": "steps\\searchSteps.ts:6"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1423
             }
           },
           {
@@ -50,7 +50,8 @@
               "location": "steps\\searchSteps.ts:7"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1
             }
           }
         ]
@@ -58,8 +59,8 @@
     ],
     "metadata": {
       "browser": {
-        "name": "internet explorer",
-        "version": "11"
+        "name": "firefox",
+        "version": "58.0.1"
       },
       "device": "",
       "platform": {

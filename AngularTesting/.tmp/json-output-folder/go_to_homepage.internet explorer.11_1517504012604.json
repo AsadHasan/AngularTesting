@@ -25,7 +25,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1481
+              "duration": 1710
             }
           },
           {
@@ -38,7 +38,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1624
+              "duration": 1556
             }
           }
         ]
@@ -46,8 +46,8 @@
     ],
     "metadata": {
       "browser": {
-        "name": "firefox",
-        "version": "58.0.1"
+        "name": "internet explorer",
+        "version": "11"
       },
       "device": "",
       "platform": {

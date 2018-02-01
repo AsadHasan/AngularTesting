@@ -1,2 +1,3 @@
 C:\Users\d-asha1\source\repos\AngularTesting\AngularTesting\obj\Debug\AngularTesting.njsproj.CoreCompileInputs.cache
 C:\Users\d-asha1\source\repos\AngularTesting\AngularTesting\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\d-asha1\source\repos\AngularTesting\AngularTesting\obj\Debug\AngularTesting.njsprojResolveAssemblyReference.cache
