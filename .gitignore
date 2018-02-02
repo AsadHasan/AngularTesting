@@ -1,7 +1,7 @@
 *.sln
 node_modules/
-./AngularTesting/.tmp/
-./AngularTesting/.bin/
+./AngularTesting/.tmp
+./AngularTesting/bin
 ./AngularTesting/node_modules/
 ./AnguklarTesting/obj
 *.js
