@@ -5,5 +5,7 @@ node_modules/
 .tmp/
 bin/
 obj/
-*.js*
+*.js
+*.map
+*.nsproj
 
