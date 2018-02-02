@@ -1,7 +1,8 @@
+.vs/
+.vscode/
 *.sln
 node_modules/
-./AngularTesting/.tmp
-./AngularTesting/bin
-./AngularTesting/node_modules/
-./AnguklarTesting/obj
+.tmp/
+bin/
+obj/
 *.js
